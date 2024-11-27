@@ -35,7 +35,7 @@ fi
 echo "Chọn hệ điều hành để chạy VM, một số hđh sẽ được cập nhật trong tương lai:"
 echo "1. Windows 11 23H2 (22631.2861) bản gốc chính chủ M$"
 echo "2. Ubuntu 22.04 LTS (có quyền SSH, cài Tài Scale để chạy SSH và mật khẩu là 1; username runner)"
-echo "3. Windows 11 24H2 gốc (đang trong quá trình thử nghiệm và chưa ra mắt chính thức)"
+echo "3. Windows 11 24H2 gốc"
 echo "4. UEFI 4 Windows OS (Windows 11 23H2; Windows 10 22H2; Windows 8.1; Windows 7)"
 
 read -p "Nhập lựa chọn của bạn: " user_choice
@@ -50,8 +50,8 @@ elif [ "$user_choice" -eq 2 ]; then
     file_name="/mnt/a.qcow2"
 elif [ "$user_choice" -eq 3 ]; then
     echo "Bạn đã chọn Windows 11 24H2 gốc."
-    echo "Thất bại, Phiên bản trên chưa được ra mắt chính thức"
-    exit 1
+    file_url="https://api.cloud.hashicorp.com/vagrant-archivist/v1/object/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJsaW51eHVzZXJzZmFrZS9XaW5kb3dzMTEyNEgyLzI0LjIvV2luMTEyNEgyL2QyOTQwOWVhLWFjY2MtMTFlZi05NGM4LTVhOGNhNzBiNzRhNSIsIm1vZGUiOiJyIiwiZmlsZW5hbWUiOiJXaW5kb3dzMTEyNEgyXzI0LjJfV2luMTEyNEgyX2FtZDY0LmJveCJ9.7DD39XJxF8PjIdhHcuEABTPiZbPgq_CEgVHrV9ka_eg"
+    file_name="/mnt/a.qcow2"
 elif [ "$user_choice" -eq 4 ]; then
     echo "Bạn đã chọn UEFI 4 Windows OS."
     file_url="https://api.cloud.hashicorp.com/vagrant-archivist/v1/object/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJlNTUyM2FlYi03MzhlLTQxZTgtOTU1MC1lYzYwMjkzNzI1MTgiLCJtb2RlIjoiciIsImZpbGVuYW1lIjoiNG9zdWVmaXN1YWxib290XzEuMDFfd2luZHVhbGJvb3RfYW1kNjQuYm94In0.UO4JzBAkXDS2heE3WADTrM2BxMeF_YkgtoROq4hmcog"
