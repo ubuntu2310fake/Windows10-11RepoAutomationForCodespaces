@@ -60,7 +60,7 @@ elif [ "$user_choice" -eq 3 ]; then
     file_name="/mnt/a.qcow2"
 elif [ "$user_choice" -eq 4 ]; then
     echo "Bạn đã chọn UEFI 4 Windows OS."
-    file_url="https://api.cloud.hashicorp.com/vagrant-archivist/v1/object/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJlNTUyM2FlYi03MzhlLTQxZTgtOTU1MC1lYzYwMjkzNzI1MTgiLCJtb2RlIjoiciIsImZpbGVuYW1lIjoiNG9zdWVmaXN1YWxib290XzEuMDFfd2luZHVhbGJvb3RfYW1kNjQuYm94In0.UO4JzBAkXDS2heE3WADTrM2BxMeF_YkgtoROq4hmcog"
+    file_url="https://www.dropbox.com/scl/fi/cm4kqg5f5iis40bzmy7yo/windualboot.qcow2?rlkey=0aybiajbpqve86lpjvu5ah9x2&dl=1"
     file_name="/mnt/a.qcow2"
 else
     echo "Lựa chọn không hợp lệ. Vui lòng chạy lại script và chọn 1 hoặc 2."
